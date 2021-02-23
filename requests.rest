@@ -1,0 +1,31 @@
+GET http://localhost:3333/getposts
+
+###
+
+POST http://localhost:3333/create
+Content-Type: application/json
+
+{
+    "title": "Test 4",
+    "author": "Black Eagle",
+    "desc": "Created by Black Eagle for test"
+}
+
+###
+//Get single post by id
+GET http://localhost:3333/getpost/6034d347fbee88f7f30adac6
+
+###
+//update post
+PUT http://localhost:3333/post/6034e85af112bc415441eb8c/update
+Content-Type: application/json
+
+{
+    "title": "Updated post/ post number 3 updated",
+    "author": "Mayour edited",
+    "desc": "Post created form/ create API edited"
+}
+
+###
+//delete single post
+DELETE http://localhost:3333/delete/6034e85af112bc415441eb8c
